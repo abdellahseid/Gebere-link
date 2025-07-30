@@ -9,7 +9,7 @@
 ## 🚀 Try It Now!  
 **No technical knowledge needed** - experience our platform in 3 easy steps:  
 
-1. **Visit:** [https://gebre-link.et/demo](https://gebre-link.et/demo) *(simulated link for hackathon)*  
+1. **Visit:** [https://gebre-link.et/demo](https://gebere-link.netlify.app) *(simulated link for hackathon)*  
 2. **Choose your role:** Farmer or Trader  
 3. **Explore features** with our guided tour  
 
