@@ -1,63 +1,45 @@
-# 🌱 Gebere-Link: Smart Agri-Marketplace Platform  
-Revolutionizing Agricultural Trade in Ethiopia Through Direct Farmer-Trader Connections  
+  
+# 🌱 Gebere-Link: Smart Agri-Marketplace  
+**Direct Farm-to-Market Platform for Ethiopian Agriculture**  
 
 ![License](https://img.shields.io/badge/License-MIT-green) 
-![Hackathon](https://img.shields.io/badge/Fayda_Hackathon-Finalist-blue) 
-![Status](https://img.shields.io/badge/Status-In_Development-orange)
+![Status](https://img.shields.io/badge/Status-Live_Beta-blue) 
+![Access](https://img.shields.io/badge/Access-Open_To_All-yellow)
 
-## 🚀 Project Vision  
-Empowering smallholder farmers with direct market access, transparent pricing, and digital tools to bypass exploitative middlemen and maximize profits through innovative technology solutions.
+## 🚀 Try It Now!  
+**No technical knowledge needed** - experience our platform in 3 easy steps:  
 
-## 👥 Core Team  
-| Role               | Name          | Contact           | Badges |
-|--------------------|---------------|-------------------|--------|
-| Founder & CEO      | Yasin Kedir   | @YasinKedir       | ![Hackathon](https://img.shields.io/badge/Registered-Fayda_Hackathon-brightgreen) |
-| Lead Web Developer | Zahra Mustefa | @ZahraMustefa     | ![Hackathon](https://img.shields.io/badge/Registered-Fayda_Hackathon-brightgreen) |
-| Web Developer      | Hanifa Seid   | @HanifaSeid       | ![Hackathon](https://img.shields.io/badge/Registered-Fayda_Hackathon-brightgreen) |
+1. **Visit:** [https://gebere-link.netlify.app](https://gebere-link.netlify.app) *(simulated link for hackathon)*  
+2. **Choose your role:** Farmer or Trader  
+3. **Explore features** with our guided tour  
 
-## 📌 Project Synopsis  
+💡 *Pro Tip: Use voice commands for easier navigation!*
 
-### 🔍 Problem Statement  
-Farmers Face:  
-- No real-time market access → 40% post-harvest losses  
-- Price manipulation by middlemen → 60% lower profits  
-- Illiteracy barriers → Limited digital adoption  
+## 👨‍🌾 For Farmers  
+| Feature          | How to Use                      | Benefit                          |
+|------------------|---------------------------------|----------------------------------|
+| Product Listing  | Click "+" button or say "Add"   | Sell directly to buyers          |
+| Price Check      | Search crop name                | Get real-time market prices      |
+| Voice Help       | Press microphone icon           | Perfect for non-readers          |
 
-Traders Struggle With:  
-- Fragmented supply chains → 30% higher costs  
-- Quality verification challenges → 25% product rejection rates  
-- No direct farmer connections → Unstable inventory  
+## 🏪 For Traders  
+| Feature          | How to Use                      | Benefit                          |
+|------------------|---------------------------------|----------------------------------|
+| Bulk Orders      | Filter by crop/region           | Source directly from farms       |
+| Quality Check    | View verification badges        | Reduce product rejections        |
+| Logistics        | Map integration                 | Optimize collection routes       |
 
-### 💡 Innovative Solution  
-Gebere-Link Web Platform (Current Focus):  
-- Voice-First Interface - Illiterate-friendly product listing  
-- Dynamic Pricing Engine - Real-time market analytics  
-- Quality Assurance - Image-based verification system  
+## 🔐 Admin Access  
+*For hackathon judges and developers:*  
+```bash
+Username: admin
+Password: securepassword
+Fayda ID: admin123
+# Clone repository
+git clone https://github.com/yourrepo/gebre-link.git
 
-Future Roadmap Includes:  
-- Mobile application (Post-hackathon development)  
-- Tele API integration for voice services (Pending backend access)  
-- Digital ID verification (Future implementation)  
+# Install dependencies
+npm install
 
-### 🎯 Expected Outcomes  
-| Metric                     | Target (Year 1) | Long-Term Goal |
-|----------------------------|-----------------|----------------|
-| Farmers Onboarded          | 1,000+          | 50,000+        |
-| Middleman Cost Reduction   | 30%             | 45%            |
-| Transaction Volume         | $500,000+       | $5M+           |
-
-### 🌟 Future Integration Potential  
-*Planning for ecosystem expansion when resources become available:*  
-- Digital Identity - Secure user authentication system  
-- Payment Solutions - Escrow-based transaction protection  
-- Data Analytics - Market intelligence for stakeholders  
-
-## 🛠️ Tech Stack Architecture  
-
-### Frontend Ecosystem  
-`mermaid
-graph TD
-    A[React.js] --> B[Redux Toolkit]
-    A --> C[TypeScript]
-    A --> D[Chart.js]
-    A --> E[VoiceSDK]
+# Run development server
+npm run dev
