@@ -126,15 +126,16 @@ const HomePage = ({ darkMode }) => {
                 className={`border rounded-lg overflow-hidden hover:shadow-md transition-shadow ${darkMode ? 'bg-gray-600 border-gray-500' : 'bg-white border-gray-200'}`}
               >
                 <div className={`h-48 ${darkMode ? 'bg-gray-500' : 'bg-gray-100'} flex items-center justify-center overflow-hidden`}>
-                  <img
                     src={`https://gebere-link-backend-1.onrender.com${product.image}`}
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "https://placehold.co/500x300?text=Product+Image";
-                    }}
-                  />
+                 <img
+  src={product.image} // Use Cloudinary URL directly
+  alt={product.name}
+  className="w-full h-full object-cover"
+  onError={(e) => {
+    e.target.onerror = null;
+    e.target.src = "https://placehold.co/500x300?text=Image+Not+Found";
+  }}
+/>
                 </div>
                 <div className="p-4">
                   <h3 className={`font-bold text-lg ${darkMode ? 'text-gray-100' : 'text-gray-800'}`}>{product.name}</h3>

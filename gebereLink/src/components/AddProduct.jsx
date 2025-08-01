@@ -31,25 +31,23 @@ const AddProduct = ({ darkMode }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const form = new FormData();
-      form.append('name', formData.name);
-      form.append('category', formData.category);
-      form.append('available', formData.available);
-      form.append('price', formData.price);
-      form.append('per', formData.per);
-      form.append('description', formData.description);
-      if (formData.image) {
-        form.append('image', formData.image);
-      }
+     let imagePath = '';
+if (formData.image) {
+  const imageForm = new FormData();
+  imageForm.append('image', formData.image);
 
-      // 1️⃣ Upload image first
-      let imagePath = '';
-      if (formData.image) {
-        const uploadRes = await axios.post('https://gebere-link-backend-1.onrender.com/api/upload', form, {
-          headers: { 'Content-Type': 'multipart/form-data' }
-        });
-        imagePath = uploadRes.data.imagePath;
-      }
+  const uploadRes = await axios.post(
+    'https://gebere-link-backend-1.onrender.com/api/upload',
+    imageForm,
+    {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    }
+  );
+
+  imagePath = uploadRes.data.imagePath;
+}
+
+
 
       // 2️⃣ Then send product info
       const productData = {
@@ -73,10 +71,15 @@ const AddProduct = ({ darkMode }) => {
         description: "",
         image: null,
       });
-    } catch (err) {
-      console.error("❌ Error adding product:", err);
-      alert("Error adding product");
-    }
+  } catch (err) {
+  console.error('❌ Error adding product:', {
+    message: err.message,
+    response: err.response?.data,
+    status: err.response?.status
+  });
+  alert(`Error adding product: ${err.response?.data?.message || err.message}`);
+}
+
   };
 
   return (
