@@ -126,7 +126,6 @@ const HomePage = ({ darkMode }) => {
                 className={`border rounded-lg overflow-hidden hover:shadow-md transition-shadow ${darkMode ? 'bg-gray-600 border-gray-500' : 'bg-white border-gray-200'}`}
               >
                 <div className={`h-48 ${darkMode ? 'bg-gray-500' : 'bg-gray-100'} flex items-center justify-center overflow-hidden`}>
-                    src={`https://gebere-link-backend-1.onrender.com${product.image}`}
                  <img
   src={product.image} // Use Cloudinary URL directly
   alt={product.name}
