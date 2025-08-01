@@ -36,7 +36,7 @@ Username: admin
 Password: securepassword
 Fayda ID: admin123
 # Clone repository
-git clone https://github.com/yourrepo/gebre-link.git
+git clone https://github.com/turab202/gebre-link.git
 
 # Install dependencies
 npm install
